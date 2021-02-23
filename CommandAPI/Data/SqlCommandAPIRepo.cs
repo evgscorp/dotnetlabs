@@ -47,7 +47,11 @@ namespace CommandAPI.Data
 
   public void UpdateCommand(Command cmd)
   {
-   throw new System.NotImplementedException();
+  /* if (cmd == null)
+   {
+    throw new ArgumentNullException (nameof(cmd));
+   }
+   _context.CommandItems.Update(cmd);*/
   }
  }
 }

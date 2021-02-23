@@ -37,7 +37,8 @@ public ActionResult DeleteCommand(int id)
   [HttpPatch("{id}")]
   public ActionResult PartialCommandUpdate(int id,JsonPatchDocument <CommandUpdateDto> patchDoc)
   {
-   var commandModelFromRepo = _repository.GetCommandById(id); if (commandModelFromRepo == null)
+   var commandModelFromRepo = _repository.GetCommandById(id); 
+   if (commandModelFromRepo == null)
    {
     return NotFound();
    }
