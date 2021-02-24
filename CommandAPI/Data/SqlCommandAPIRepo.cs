@@ -46,7 +46,7 @@ namespace CommandAPI.Data
   }
 
   public void UpdateCommand(Command cmd)
-  {
+  { //look at the controller method. This method will be never called.... 
   /* if (cmd == null)
    {
     throw new ArgumentNullException (nameof(cmd));
