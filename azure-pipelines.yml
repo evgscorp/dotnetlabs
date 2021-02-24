@@ -13,4 +13,5 @@ steps:
       packageType: 'sdk'
       version: '5.0.x'
 - script: dotnet build --configuration $(buildConfiguration)
+  workingDirectory: CommandAPI/
   displayName: 'dotnet build $(buildConfiguration)'
