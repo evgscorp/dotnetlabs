@@ -21,3 +21,4 @@ steps:
   inputs:
      command: test
      arguments: '--no-build'
+     projects: '**/*.csproj'
